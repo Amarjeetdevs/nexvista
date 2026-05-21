@@ -6,21 +6,21 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     id: 1,
-    quote: "Amrut Core Systems delivered a high-stakes tracking solution for our PSU project with incredible precision. Their understanding of government protocols is unmatched.",
-    author: "Project Lead",
-    role: "Public Sector Undertaking (PSU)",
+    quote: "The EHR system developed by us streamlined our clinic operations completely. Patient check-in time dropped by 60%, and data retrieval became instant. Their healthcare domain expertise is outstanding.",
+    author: "Dr. Meera Deshmukh",
+    role: "Director, City Care Hospital",
   },
   {
     id: 2,
-    quote: "As a developer, I value architectural elegance. Their IoT frameworks are robust, scalable, and remarkably easy to integrate into existing infrastructures.",
-    author: "Lead Developer",
-    role: "Shipsar",
+    quote: "We needed a robust B2B platform for our supply chain, and they delivered beyond expectations. The system handles 10,000+ orders monthly with zero downtime. Highly recommend their engineering team.",
+    author: "Rajan Kothari",
+    role: "VP Operations, Gujarat Mart",
   },
   {
     id: 3,
-    quote: "The AI forecasting models they built for us reduced inventory overhead by 22% in the first six months. A game-changer for our e-commerce operations.",
-    author: "Operations Head",
-    role: "Eterna Infotech",
+    quote: "The predictive analytics model they built for our inventory reduced wastage by 28% within four months. Their AI team is pragmatic, fast, and deeply technical.",
+    author: "Neha Singh",
+    role: "Head of Analytics, FarmFresh Retail",
   },
 ];
 

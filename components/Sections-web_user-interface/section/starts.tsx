@@ -1,35 +1,35 @@
 "use client";
 
-import { Terminal, Handshake, Users } from "lucide-react";
+import { Terminal, Handshake, Users, Building, Shield } from "lucide-react";
 import { motion } from "framer-motion";
 
 const stats = [
   {
     icon: Terminal,
     value: "6+",
-    label: "Major Projects",
+    label: "Projects Completed",
     iconBg: "bg-secondary",
     iconColor: "text-secondary-foreground",
   },
   {
     icon: Handshake,
     value: "4+",
-    label: "Strategic Partners",
+    label: "Active Clients",
     iconBg: "bg-surface-container-high",
     iconColor: "text-secondary",
   },
   {
     icon: Users,
     value: "6",
-    label: "Advisory Members",
+    label: "Team Members",
     iconBg: "bg-primary-container",
     iconColor: "text-secondary",
   },
-   {
-    icon: Handshake,
-    value: "4+",
-    label: "Strategic Partners",
-    iconBg: "bg-surface-container-high",
+  {
+    icon: Building,
+    value: "3+",
+    label: "Enterprise Partners",
+    iconBg: "bg-secondary/10",
     iconColor: "text-secondary",
   },
 ];
@@ -37,7 +37,7 @@ const stats = [
 export function Stats() {
   return (
     <section className="max-w-full mx-auto bg-[#ECEEF0] dark:bg-secondary/0 px-4 md:px-20 py-8 md:py-12">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-2 bg-white p-6 md:p-12 rounded-[2rem] border border-border/15 dark:border-white/5">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-2 bg-white dark:bg-secondary/20 p-6 md:p-12 rounded-[2rem] border border-border/15 dark:border-white/5">
         {stats.map((stat, index) => (
           <motion.div
             key={stat.label}

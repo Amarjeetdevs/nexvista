@@ -85,7 +85,7 @@ export function Hero() {
 
 >
  <img src={`${heroImageUrl}`} alt=""
- className="opacity-25 dark:opacity-80   rounded-4xl absolute inset-0 z-10"
+ className="opacity-25 dark:opacity-50   rounded-4xl absolute inset-0 z-10"
 //  style={{  backgroundImage: `url(${heroImageUrl})`, 
 //  backgroundSize: 'cover', backgroundPosition: 'center', opacity:'1' }}   
  />        
@@ -99,7 +99,7 @@ export function Hero() {
           transition={{ duration: 0.5 }}
           className="inline-block px-4 py-1.5 bg-[#FFDEA6] dark:bg-secondary/90 text-black dark:text-white text-[10px] font-bold tracking-[0.2em] uppercase rounded-sm mb-6 md:mb-8 backdrop-blur-sm"
         >
-          MSME Certified | Startup India Recognized
+         	MSME Certified | Startup India Recognized
         </motion.span>
 
         <motion.h1

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -24,8 +25,9 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ThemeToggle } from "@/components/Wrapper/theme-toggle"; ;
 import { cn } from "@/lib/utils";
-import logo from '../../public/image/logo/nobg_logo.png';
+// import logo from '../../public/image/logo/nobg_logo.png';
 
+import logo from '../../public/image/logo/nobg_logo.png'
 // Navigation items - Your 5 main sections
 const navigationItems = [
   {
@@ -114,19 +116,22 @@ export function Navbar() {
             scrolled ? "h-14 md:h-16" : "h-20 md:h-24"
           )}
         >
-          {/* Logo Section - changes size on scroll */}
           <Link href="/" className="flex items-center space-x-2 transition-all duration-300">
-            <span
-              className={cn(
-                "font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent transition-all duration-300",
-                scrolled ? "text-lg md:text-xl" : "text-2xl md:text-3xl"
-              )}
-            >
-            <img src={`${logo}`} alt=""  className="bg-contain" />
-              Amrut Core Systems
-         
-
-            </span>
+     <span
+  className={cn(
+    "font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent transition-all duration-300 flex items-center gap-2",
+    scrolled ? "text-lg md:text-xl" : "text-2xl md:text-3xl"
+  )}
+>
+  <Image 
+    src={logo} 
+    width={45} 
+    height={45} 
+    alt="Company Logo" 
+    className="object-contain"
+  />
+  Nexvista
+</span>
             <span
               className={cn(
                 "hidden sm:inline text-muted-foreground transition-all duration-300",
@@ -136,6 +141,8 @@ export function Navbar() {
               {/* Systems */}
             </span>
           </Link>
+
+  
 
           {/* Desktop Navigation - Shows on medium screens and above */}
           <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">

@@ -8,16 +8,14 @@ export function Footer3() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#000410]/90 dark:bg-[#000410] w-full pt-16 md:pt-20 pb-8 md:pb-10 relative overflow-hidden">
-      {/* Subtle Background Pattern */}
+    <footer className="bg- [#000410]/90 bg-[#000410]  dark:bg-[#000410] w-full pt-16 md:pt-20 pb-8 md:pb-10 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 pointer-events-none">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-amber-400 rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-amber-100 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400 rounded-full blur-3xl" />
         </div>
 
       <div className="relative z-10   mx-auto px-4 md:px-8 lg:px-20">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-12">
-          {/* Left Section - Logo & Certifications */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -26,9 +24,10 @@ export function Footer3() {
             className="flex flex-col gap-6 md:gap-8 w-full md:w-auto text-center md:text-left"
           >
             <div>
-              <div className="text-2xl md:text-3xl text-white dark:font-black bg-gradie nt-to-r from-primary to-primary/70 bg-clip-text text-transparent  uppercase tracking-tighter">
-                Amrut Core Systems
+              <div className="text-2xl md:text-3xl font-bold text-white dark:font-black bg-gradie nt-to-r from-primary to-primary/70 bg-clip-text   uppercase tracking-tighter">
+                Nexvista
               </div>
+            
               <p className="text-slate-400 text-xs mt-2 max-w-md">
                 Intelligent Technology Solutions for Modern Enterprises
               </p>
@@ -58,10 +57,7 @@ export function Footer3() {
             </div>
           </motion.div>
    <div className="absolute inset-0 opacity-5 pointer-events-none">
-          <div className="absolute top-0 right-0 w-64 h-96 bg-amber-400 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-64 h-96 bg-blue-400 rounded-full blur-3xl" />
         </div>
-          {/* Right Section - Links & Copyright */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -70,36 +66,42 @@ export function Footer3() {
             className="flex flex-col gap-6 md:gap-8 w-full md:w-auto"
           >
             
-            {/* Navigation Links */}
             <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6">
+          <Link 
+  href="/privacy" 
+  className="relative text-slate-400 hover:text-white transition-all duration-300 text-sm font-medium inline-flex items-center gap-1 group"
+>
+  Privacy Policy
+  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 group-hover:w-full transition-all duration-300" />
+  <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-amber-400/50 group-hover:w-full transition-all duration-300 delay-75" />
+</Link>
               <Link 
-                href="/privacy" 
-                className="text-slate-400 hover:text-white  transition-all duration-300 text-sm font-medium hover:translate-y-[-2px] inline-flex items-center gap-1 group"
-              >
-                Privacy Policy
-                <span className="w-0 h-px  bg-amber-400 group-hover:w-full transition-all duration-300" />
-              </Link>
-              <Link 
-                href="/terms" 
-                className="text-slate-400 hover:text-white transition-all duration-300 text-sm font-medium hover:translate-y-[-2px] inline-flex items-center gap-1 group"
-              >
-                Terms of Service
-                <span className="w-0 h-px bg-amber-400 group-hover:w-full transition-all duration-300" />
-              </Link>
-              <Link 
-                href="/governance" 
-                className="text-slate-400 hover:text-white transition-all duration-300 text-sm font-medium hover:translate-y-[-2px] inline-flex items-center gap-1 group"
-              >
-                Institutional Governance
-                <span className="w-0 h-px bg-amber-400 group-hover:w-full transition-all duration-300" />
-              </Link>
-              <Link 
-                href="/partnerships" 
-                className="text-amber-400 font-bold hover:text-amber-300 transition-all duration-300 text-sm hover:translate-y-[-2px] inline-flex items-center gap-1 group"
-              >
-                Global Partnerships
-                <span className="w-0 h-px bg-amber-400 group-hover:w-full transition-all duration-300" />
-              </Link>
+  href="/terms" 
+  className="relative text-slate-400 hover:text-white transition-all duration-300 text-sm font-medium inline-flex items-center gap-1 group"
+>
+  Terms of Service
+  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 group-hover:w-full transition-all duration-300" />
+  <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-amber-400/50 group-hover:w-full transition-all duration-300 delay-75" />
+</Link>
+
+<Link 
+  href="/governance" 
+  className="relative text-slate-400 hover:text-white transition-all duration-300 text-sm font-medium inline-flex items-center gap-1 group"
+>
+  Institutional Governance
+  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 group-hover:w-full transition-all duration-300" />
+  <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-amber-400/50 group-hover:w-full transition-all duration-300 delay-75" />
+</Link>
+
+<Link 
+  href="/partnerships" 
+  className="relative text-amber-400 font-bold hover:text-amber-300 transition-all duration-300 text-sm inline-flex items-center gap-1 group"
+>
+  Global Partnerships
+  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 group-hover:w-full transition-all duration-300" />
+  <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-amber-400/50 group-hover:w-full transition-all duration-300 delay-75" />
+</Link>
+
             </div>
 
             {/* Social Media Links */}
@@ -144,8 +146,8 @@ export function Footer3() {
 
         {/* Bottom Decorative Line */}
         <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-white/5">
-          <p className="text-slate-500/90 text-xs text-center">
-              © {currentYear} Amrut Core Systems Private Limited. All Rights Reserved.
+          <p className="text-slate-400/90 text-sm text-center">
+              © {currentYear} Nextvista Private Limited. All Rights Reserved.
 
           </p>
         </div>

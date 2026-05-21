@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Amrut Core Systems",
+  title: "Nexvista | Intelligent Systems for a Smarter Future",
   description: "",
 };
 

@@ -9,27 +9,39 @@ import Link from "next/link";
 const projects = {
   featured: {
     id: 1,
-    title: "Wine Manufacturing Tracking",
-    category: "Manufacturing",
-    description: "Real-time supply chain monitoring and quality control system for leading beverage producers.",
+    title: "Clinic Management System (EHR)",
+    category: "Healthcare",
+    description: "Complete electronic health records system with patient portal, online appointments, and automated billing for a multi-location clinic network.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBeVFp7slwmkmC8QSTSJBR8KO6j0SXLf4EiVPFcXk_XeXu3vcERC7wbvYu2SdI0NdIt4xNAfTm36ln7kFRXBJ8uCxb5lhRNkYl5AwIFmRzpbsvWuJ26Se4hH51P0E9-WA2RfyxocOru82C7dZBVXO-5lQxw2yo7A3Ctt8xWsXhlWyAKK7ExbqBmBlP4dan5S3RZOoNy_cPclds70VdviFxYExk3EDUs-UC2N0r1eXcTWwAMfN_ljHzZGEsQavJQyJsAjOWMm5ahop4",
-    href: "/portfolio/wine-manufacturing",
+    href: "/portfolio/clinic-management-system",
+    metrics: [
+      { label: "Patient Check-in Time", value: "-60%" },
+      { label: "Data Retrieval", value: "Instant" },
+    ],
   },
   small1: {
     id: 2,
-    title: "Healthcare Equipment Tracking",
-    category: "HITES",
-    description: "Centralized asset management for large-scale medical infrastructure projects.",
+    title: "Hospital Management System (HMS)",
+    category: "Healthcare",
+    description: "Centralized hospital operations platform including finance module, inventory tracking, and telemedicine integration for a 200-bed facility.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAoQ0kwNXCmQBurwtIgohrnr8dgTC92tdvuBZapLK3mr8q1YkhN5PmuH_Cdtrvt-DLgRiXZhER2fId3TsKArBQwZ_nCh-FM7uDC4t9h9rA5e1KTRbgg8HO-zkw2nNhGWcaEANMA4t_p6lYUKszVqiHZh1VWAZG0CqrBfKvme9902cBrsl0jsjVvi9G9eH3tCqsvd5NRg-7gy1YgdsjN3zXTugibHeD1Cwut3FlBsSSFga6obpHHnx4IHOWTDwrByY8M2T6Q8Pr5abs",
-    href: "/portfolio/healthcare-tracking",
+    href: "/portfolio/hospital-management-system",
+    metrics: [
+      { label: "Operational Efficiency", value: "+40%" },
+      { label: "Billing Accuracy", value: "99.5%" },
+    ],
   },
   banner: {
     id: 3,
-    title: "AI Demand Forecasting",
+    title: "B2B E-commerce Platform",
     category: "E-commerce",
-    description: "Predictive inventory management using machine learning to optimize multi-channel retail logistics.",
+    description: "Custom wholesale ordering platform with real-time inventory sync, bulk pricing, and automated reordering for a national distribution network.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBJPO1Bk0IPIoHHc7holOlBD6xsJZQIJuAYPB6Ja3D60qGBeNYBh2cjNmChMMPLUzqJGFmY9bIftqPOGG3-l0J4jbb4Mh7FleDUVAbu635Lk_qTbiwKtJ_ab95dCfwsA8DZjef-4M5BDLPWhJSGQW_upbB2AwbIy0mNhoqzyyxyO_H0iybM25cQuS6JJ5TmY9_ShA8YRyWOREiawbPbDvWacZv9TsaO_pbJi9IyfnwV-riwzrkEv21j0T9XVAM64zbuNZptGDn0S0E",
-    href: "/portfolio/ai-demand-forecasting",
+    href: "/portfolio/b2b-ecommerce-platform",
+    metrics: [
+      { label: "Order Processing Time", value: "-50%" },
+      { label: "Inventory Accuracy", value: "99%+" },
+    ],
   },
 };
 
