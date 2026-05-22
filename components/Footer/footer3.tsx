@@ -116,32 +116,10 @@ export function Footer3() {
 </Link>
 
             </div>
-
-            {/* Social Media Links */}
             <div className="flex justify-center md:justify-end gap-4">
-              {/* <Link 
-                href="#" 
-                className="p-2 rounded-full bg-white/5 hover:bg-amber-400/20 border border-white/10 transition-all duration-300 hover:scale-110 group"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-4 h-4 text-slate-400 group-hover:text-amber-400 transition-colors" />
-              </Link>
+         
               <Link 
-                href="#" 
-                className="p-2 rounded-full bg-white/5 hover:bg-amber-400/20 border border-white/10 transition-all duration-300 hover:scale-110 group"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4 text-slate-400 group-hover:text-amber-400 transition-colors" />
-              </Link>
-              <Link 
-                href="#" 
-                className="p-2 rounded-full bg-white/5 hover:bg-amber-400/20 border border-white/10 transition-all duration-300 hover:scale-110 group"
-                aria-label="GitHub"
-              >
-                <Github className="w-4 h-4 text-slate-400 group-hover:text-amber-400 transition-colors" />
-              </Link> */}
-              <Link 
-                href="mailto:info@amrutcoresystems.com" 
+                href="mailto:info@nexvista.co" 
                 className="p-2 rounded-full bg-white/5 hover:bg-amber-400/20 border border-white/10 transition-all duration-300 hover:scale-110 group"
                 aria-label="Email"
               >
@@ -149,7 +127,6 @@ export function Footer3() {
               </Link>
             </div>
 
-            {/* Copyright */}
             <div className="text-slate-400/90 text-center md:text-right text-xs">
             Empowering businesses with intelligent technology solutions
 

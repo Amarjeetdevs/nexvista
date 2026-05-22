@@ -136,7 +136,7 @@ export function Hero() {
           >
             <Button
               size="lg"
-              className="dark:bg-secondary text-secondary-foreground hover:bg-secondary border border-white/20 px-8 md:px-10 py-5 md:py-6 rounded-sm font-regular text-base md:text-lg transition-all w-full sm:w-auto shadow-xl cursor-pointer"
+              className="dark:bg-secondary text-white hover:bg-secondary border border-white/20 px-8 md:px-10 py-5 md:py-6 rounded-sm font-regular  text-base md:text-lg transition-all w-full sm:w-auto shadow-xl cursor-pointer"
             >
               Explore Solutions
               <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-1" />
