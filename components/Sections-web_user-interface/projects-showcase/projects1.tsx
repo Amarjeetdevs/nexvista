@@ -12,7 +12,8 @@ const projects = {
     title: "Clinic Management System (EHR)",
     category: "Healthcare",
     description: "Complete electronic health records system with patient portal, online appointments, and automated billing for a multi-location clinic network.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBeVFp7slwmkmC8QSTSJBR8KO6j0SXLf4EiVPFcXk_XeXu3vcERC7wbvYu2SdI0NdIt4xNAfTm36ln7kFRXBJ8uCxb5lhRNkYl5AwIFmRzpbsvWuJ26Se4hH51P0E9-WA2RfyxocOru82C7dZBVXO-5lQxw2yo7A3Ctt8xWsXhlWyAKK7ExbqBmBlP4dan5S3RZOoNy_cPclds70VdviFxYExk3EDUs-UC2N0r1eXcTWwAMfN_ljHzZGEsQavJQyJsAjOWMm5ahop4",
+    image : "https://images.pexels.com/photos/7195115/pexels-photo-7195115.jpeg",
+    // image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBeVFp7slwmkmC8QSTSJBR8KO6j0SXLf4EiVPFcXk_XeXu3vcERC7wbvYu2SdI0NdIt4xNAfTm36ln7kFRXBJ8uCxb5lhRNkYl5AwIFmRzpbsvWuJ26Se4hH51P0E9-WA2RfyxocOru82C7dZBVXO-5lQxw2yo7A3Ctt8xWsXhlWyAKK7ExbqBmBlP4dan5S3RZOoNy_cPclds70VdviFxYExk3EDUs-UC2N0r1eXcTWwAMfN_ljHzZGEsQavJQyJsAjOWMm5ahop4",
     href: "/portfolio/clinic-management-system",
     metrics: [
       { label: "Patient Check-in Time", value: "-60%" },
@@ -71,7 +72,7 @@ export function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className="md:col-span-8 group relative overflow-hidden rounded-2xl h-[400px] md:h-[500px]"
+            className="md:col-span-8 group relative overflow-hidden rounded-lg h-[400px] md:h-[500px]"
           >
             <Image
               src={projects.featured.image}
@@ -104,7 +105,7 @@ export function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            className="md:col-span-4 group relative overflow-hidden rounded-2xl h-[400px] md:h-[500px]"
+            className="md:col-span-4 group relative overflow-hidden rounded-lg h-[400px] md:h-[500px]"
           >
             <Image
               src={projects.small1.image}
@@ -131,7 +132,7 @@ export function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
-            className="md:col-span-12 group relative overflow-hidden rounded-2xl h-[300px] md:h-[400px]"
+            className="md:col-span-12 group relative overflow-hidden rounded-lg h-[300px] md:h-[400px]"
           >
             <Image
               src={projects.banner.image}

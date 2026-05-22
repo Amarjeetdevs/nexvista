@@ -1,3 +1,4 @@
+import { GlobalNetwork } from "@/components/brands/brand-philosophy";
 import { ComingSoon } from "@/components/ComminSoon/commingsoon";
 import { Footer } from "@/components/Footer/footer";
 import { Footer2 } from "@/components/Footer/footer2";
@@ -26,7 +27,9 @@ export default function Home() {
  <Hero />
       <Stats />
       <Expertise />
-      <Recognition />
+      {/* <Recognition /> */}
+      <GlobalNetwork />
+
       <Projects/>
       <Testimonials/>
       <Blog/>
