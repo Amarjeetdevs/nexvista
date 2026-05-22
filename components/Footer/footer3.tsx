@@ -1,8 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import logo from '../../public/image/logo/nobg_logo.png'
 import { Verified, Award, Shield,  Mail, Globe } from "lucide-react";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export function Footer3() {
   const currentYear = new Date().getFullYear();
@@ -24,9 +27,19 @@ export function Footer3() {
             className="flex flex-col gap-6 md:gap-8 w-full md:w-auto text-center md:text-left"
           >
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-white dark:font-black bg-gradie nt-to-r from-primary to-primary/70 bg-clip-text   uppercase tracking-tighter">
-                Nexvista
-              </div>
+            <div className="flex items-center gap-2 text-2xl md:text-3xl font- bold font-black text-white dark:font-black bg-gradient-to-r from-primary to-primary/70 bg-clip-text uppercase tracking-tighter">
+  <Image 
+    src={logo} 
+    width={60} 
+    height={60} 
+    alt="Company Logo" 
+    className="object-contain"
+  />
+  <span className=" to-white/60 bg-clip-text ">
+    Nexvista
+  </span>
+</div>
+                 
             
               <p className="text-slate-400 text-xs mt-2 max-w-md">
                 Intelligent Technology Solutions for Modern Enterprises
